@@ -1,5 +1,9 @@
 import { BannerImages } from "@/components/layout/BannerImages";
-import { Instructors } from "@/components/layout/Instructors";
+import { ContactForm } from "@/components/layout/ContactFormSection";
+import { GalleryComponent } from "@/components/layout/GalleryComponent";
+import { InstructorsComponent } from "@/components/layout/InstructorsComponent";
+import { PricingSection } from "@/components/layout/PricingSection";
+import { TestimonialSection } from "@/components/layout/TestimonialSection";
 import { TrainingPrograms } from "@/components/layout/TrainingPrograms";
 
 const Home = () => {
@@ -25,9 +29,11 @@ const Home = () => {
         <TrainingPrograms/>
       </section>
 
-      <section>
-        <Instructors/>
-      </section>
+        <InstructorsComponent/>
+        <GalleryComponent/>
+        <TestimonialSection/>
+        <PricingSection/>
+        <ContactForm/>
 
     </div>
   );

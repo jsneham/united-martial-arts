@@ -10,3 +10,8 @@ export type FollowUsType = {
   username: string;
   image?: string; 
 };
+
+export type TestimonialType = {
+  name: string;
+  feedback: string;
+};
