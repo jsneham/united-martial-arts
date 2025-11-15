@@ -60,10 +60,14 @@ export const followUsData: FollowUsType[] = [
 export const InstructorDetails: string = "Our lead instructor, Sensei Sneha Jadhav, brings over 20 years of martial arts expertise. She is passionate about teaching, combining advanced techniques with a personalized, approachable style.\n Sensei Sneha has guided students from their very first lesson to national competitions. Her unique achievements include multiple black belts and championship titles, plus a reputation for fostering discipline and confidence in every student.\n With a deep commitment to each individual’s journey, Sensei Sneha ensures every student feels supported and challenged. Her inspiring leadership transforms training into both personal growth and accomplishment."
 
 export const galleryImages = [
+    "/images/gallery1.PNG",
+    "/images/gallery2.PNG",
     "/images/banner1.jpg",
     "/images/banner2.jpg",
     "/images/banner3.jpg",
     "/images/banner4.jpg",
+    "/images/banner2.jpg",
+    "/images/banner3.jpg",
   ];
 
 export const testimonials: TestimonialType[] = [
@@ -108,3 +112,6 @@ export const pricingPlans = [
     highlight: true,
   },
 ];
+
+export const youtube ="https://www.youtube.com/@unitedmartialartsacademy8372";
+export const instagram ="https://www.instagram.com/umaa_9611";

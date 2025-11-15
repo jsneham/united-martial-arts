@@ -7,9 +7,15 @@ const Header = () => {
 
         {/* LEFT: Logo */}
         <div className="flex items-center gap-3">
+          <img
+            src={'./logo.png'}
+            alt="United Martial Arts Academy Logo"
+            className="w-8 h-8 object-contain"
+          />
           <h1 className="text-2xl font-bold text-orange-500">
-            United Martial Arts
+            UMA
           </h1>
+          
         </div>
 
         {/* RIGHT: Navigation */}
@@ -20,19 +26,19 @@ const Header = () => {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuLink href="/classes" className="hover:text-orange-400">Classes</NavigationMenuLink>
+              <NavigationMenuLink href="#classes" className="hover:text-orange-400">Classes</NavigationMenuLink>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuLink href="/instructors" className="hover:text-orange-400">Instructors</NavigationMenuLink>
+              <NavigationMenuLink href="#instructors" className="hover:text-orange-400">Instructors</NavigationMenuLink>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuLink href="/gallery" className="hover:text-orange-400">Gallery</NavigationMenuLink>
+              <NavigationMenuLink href="#gallery" className="hover:text-orange-400">Gallery</NavigationMenuLink>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuLink href="/contact" className="hover:text-orange-400">Contact</NavigationMenuLink>
+              <NavigationMenuLink href="#contact" className="hover:text-orange-400">Contact</NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>

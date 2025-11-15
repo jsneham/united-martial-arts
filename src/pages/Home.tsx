@@ -1,5 +1,5 @@
 import { BannerImages } from "@/components/layout/BannerImages";
-import { ContactForm } from "@/components/layout/ContactFormSection";
+import { ContactForm } from "@/components/layout/ContactComponent";
 import { GalleryComponent } from "@/components/layout/GalleryComponent";
 import { InstructorsComponent } from "@/components/layout/InstructorsComponent";
 import { PricingSection } from "@/components/layout/PricingSection";
@@ -13,7 +13,7 @@ const Home = () => {
       {/* HERO TEXT */}
       <section className="text-center mb-8">
         <h2 className="text-4xl font-bold text-white">
-          Martial Arts Academy
+          United Martial Arts Academy
         </h2>
         <p className="text-gray-400 mt-2">
           Strength. Discipline. Community.
@@ -25,7 +25,7 @@ const Home = () => {
         <BannerImages />
       </section>
 
-      <section>
+      <section id="training">
         <TrainingPrograms/>
       </section>
 

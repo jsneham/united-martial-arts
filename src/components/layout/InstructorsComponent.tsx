@@ -2,7 +2,7 @@ import { InstructorDetails } from "@/constant";
 
 export const InstructorsComponent = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between mt-16 max-w-7xl mx-auto text-white gap-10">
+    <section id="instructors" className="flex flex-col md:flex-row items-center justify-between mt-16 max-w-7xl mx-auto text-white gap-10">
       {/* LEFT SECTION — Text */}
       <div className="md:w-1/2 flex flex-col justify-center">
         <h2 className="text-3xl font-bold mb-4 text-center md:text-left">

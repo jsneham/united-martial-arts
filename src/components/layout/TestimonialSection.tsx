@@ -8,7 +8,7 @@ export const TestimonialSection = () => {
   const plugin = React.useRef(Autoplay({ delay: 4000, stopOnInteraction: false }));
 
   return (
-    <section className="mt-16 bg-black text-white text-center">
+    <section id="testimonial" className="mt-16 bg-black text-white text-center">
       <h2 className="text-3xl font-bold mb-10">What Our Students Say</h2>
 
       <Carousel

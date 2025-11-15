@@ -5,11 +5,25 @@ import { Button } from "../ui/button";
 
 export const PricingSection = () => {
   return (
-    <section className="mt-16 bg-black text-white text-center">
-      <h2 className="text-3xl font-bold mb-2">Our Pricing</h2>
+    <section id="pricing" className="mt-16 bg-black text-white text-center">
+      <h2 className="text-3xl font-bold mb-2">Classes & Pricing Info</h2>
       <p className="text-gray-400 mb-10 text-lg">Flexible, simple plans.</p>
 
-      <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+    <section className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto text-white gap-12">
+     {/* LEFT SECTION — Address / Info */}
+      <div className="md:w-1/2 flex flex-col justify-center text-center md:text-left">
+        <h2 className="text-3xl font-bold mb-4">Address</h2>
+        <p className="text-sm text-gray-400 leading-relaxed whitespace-pre-line">
+          MANDIR, SAI SHARAN BUILDING ROOM NUMBER 103 FLAT {'\n'}
+          FIRST FLOOR OPPOSITE SAI KRISHNA SOCIETY, {'\n'}
+          NEAR LOTUS BUILDING USARLI KHURD GAON DEVI, Vichumbe Rd, {'\n'}
+          New Panvel East, Usarli Khurd, Maharashtra 410221 {'\n'}
+          Phone: 099201 45779 {'\n'}
+          Email: umaa.india@gmail.com
+        </p>
+      </div>
+
+      <div className="w-full md:w-1/2 max-w-md flex flex-col md:flex-row justify-center items-center gap-8">
         {pricingPlans.map((plan, index) => (
           <Card
             key={index}
@@ -47,6 +61,8 @@ export const PricingSection = () => {
           </Card>
         ))}
       </div>
+</section>
+      
     </section>
   );
 };

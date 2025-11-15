@@ -22,7 +22,7 @@ const formSchema = z.object({
   message: z.string().min(5, { message: "Message must be at least 5 characters." }),
 });
 
-export function ContactForm() {
+export function ContactFormSection() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
