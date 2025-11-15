@@ -1,6 +1,6 @@
 import { Check } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { pricingPlans } from "@/constant";
+import { pricingPlans, scheduleData } from "@/constant";
 import { Button } from "../ui/button";
 
 export const PricingSection = () => {
@@ -10,17 +10,23 @@ export const PricingSection = () => {
       <p className="text-gray-400 mb-10 text-lg">Flexible, simple plans.</p>
 
     <section className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto text-white gap-12">
-     {/* LEFT SECTION — Address / Info */}
+     {/* LEFT SECTION — schedule / Info */}
       <div className="md:w-1/2 flex flex-col justify-center text-center md:text-left">
-        <h2 className="text-3xl font-bold mb-4">Address</h2>
-        <p className="text-sm text-gray-400 leading-relaxed whitespace-pre-line">
-          MANDIR, SAI SHARAN BUILDING ROOM NUMBER 103 FLAT {'\n'}
-          FIRST FLOOR OPPOSITE SAI KRISHNA SOCIETY, {'\n'}
-          NEAR LOTUS BUILDING USARLI KHURD GAON DEVI, Vichumbe Rd, {'\n'}
-          New Panvel East, Usarli Khurd, Maharashtra 410221 {'\n'}
-          Phone: 099201 45779 {'\n'}
-          Email: umaa.india@gmail.com
-        </p>
+        <Card className="bg-black border-neutral-900">
+      <CardContent className="p-0">
+        <div className="divide-y divide-neutral-800">
+          {scheduleData.map((item, index) => (
+            <div
+              key={index}
+              className="flex justify-between px-4 py-3 text-gray-300 text-sm"
+            >
+              <span>{item.name}</span>
+              <span className="text-gray-400">{item.time}</span>
+            </div>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
       </div>
 
       <div className="w-full md:w-1/2 max-w-md flex flex-col md:flex-row justify-center items-center gap-8">

@@ -100,18 +100,27 @@ export const pricingPlans = [
     buttonText: "Get Started",
     highlight: true,
   },
-  {
-    title: "Unlimited",
-    price: "₹70",
-    features: [
-      "Unlimited classes",
-      "Special seminars",
-      "Family discounts",
-    ],
-    buttonText: "Get Started",
-    highlight: true,
-  },
+  // {
+  //   title: "Unlimited",
+  //   price: "₹70",
+  //   features: [
+  //     "Unlimited classes",
+  //     "Special seminars",
+  //     "Family discounts",
+  //   ],
+  //   buttonText: "Get Started",
+  //   highlight: true,
+  // },
 ];
 
 export const youtube ="https://www.youtube.com/@unitedmartialartsacademy8372";
 export const instagram ="https://www.instagram.com/umaa_9611";
+
+export const scheduleData = [
+  { name: "Morning Kids Class", time: "Mon–Fri 8:00 AM" },
+  { name: "Teen Evening Class", time: "Mon–Fri 5:30 PM" },
+  { name: "Adult Advanced", time: "Tue/Thu 7:00 PM" },
+  { name: "Women's Self-Defense", time: "Sat 10:00 AM" },
+  { name: "Open Sparring", time: "Fri 8:00 PM" },
+  { name: "Sunday Family", time: "Sun 11:00 AM" },
+];
